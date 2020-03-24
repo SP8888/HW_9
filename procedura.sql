@@ -1,0 +1,12 @@
+DELIMITER //
+ use example//
+ 
+ CREATE PROCEDURE D_A()
+BEGIN
+  DECLARE i INT DEFAULT 1;
+  WHILE i <= 31 DO
+  INSERT august VALUES (NULL,i);
+	SET i = i + 1;
+  END WHILE;
+END//
+
